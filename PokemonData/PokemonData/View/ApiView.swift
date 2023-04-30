@@ -14,7 +14,7 @@ struct ApiView: View {
         NavigationStack {
             List(viewModel.result , id: \.self) { result in
                 Text(result.name ?? "")
-                onTapGesture {
+                    .onTapGesture {
                     viewModel.selectedPokemonUrl = result.url ?? ""
                     viewModel.navigateToDetail = true
                 }

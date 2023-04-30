@@ -6,9 +6,7 @@
 //
 import Foundation
 
-class APIManager{
-    
-    
+class APIManager{        
     static let shared = APIManager()
     private init() {}
     
